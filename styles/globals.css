@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: rgb(66, 77, 91);
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.text-orange-400 {
+    --tw-text-opacity: 1;
+    color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+.rounded-md {
+    border-radius: 0.375rem/* 6px */;
+}
+
+.text-lg {
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+}
+
+.map-overlay {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#map {
+  height: 100vh;
+}
+
+.font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.border-0 {
+    border-width: 0px;
+}
+
+.border-b-2 {
+    border-bottom-width: 2px;
+}
+
+.text-gray-700 {
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+
+
+
+
