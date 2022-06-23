@@ -8,7 +8,7 @@ import Details from '../components/Details';
 
 const Home: NextPage = () => {
   const [street, setStreet] = useState({});
-  const [isStreet, setIsStreet] = useState<boolean>(false);
+  const [isStreet, setIsStreet] = useState(false);
   const [marker, setMarker] = useState({});
   const [slot, setSlot] = useState(0);
   const [time, setTime] = useState(0);

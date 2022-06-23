@@ -1,4 +1,11 @@
-export default function Details(props) {
+interface propsTypes{
+    isStreet: boolean,
+    street: object,
+    slot: number,
+    times: number[][]
+}
+
+export default function Details(props: propsTypes) {
     return (
         <>
         {props.isStreet && <div 
