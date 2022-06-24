@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 
 function handleStreetSelect(event: ChangeEvent<HTMLSelectElement>) {
     const str = streets.find((str) => str.id == event.target.value)!;
-    marker.setLngLat([str.lng, str.lat]);
+    marker?.setLngLat([str.lng, str.lat]);
     setStreet(str);
     setIsStreet(true);
 }
