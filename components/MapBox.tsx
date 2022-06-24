@@ -1,4 +1,8 @@
-export default function MapBox(props) {
+interface PropsTypes{
+    map: string
+}
+
+export default function MapBox(props: PropsTypes) {
     return (
         <>
         <p className="text-center mt-3 font-mono text-orange-400">PARKING IN MOSCOW</p>

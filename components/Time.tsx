@@ -1,4 +1,13 @@
-export default function Time(props) {
+import { MouseEvent } from "react";
+
+interface PropsTypes{
+    time: number;
+    isStart: boolean;
+    isStop: boolean;
+    onStopClick(event: MouseEvent<HTMLElement>): void 
+}
+
+export default function Time(props: PropsTypes) {
     let time = timeFormat(Math.floor(props.time / 3600).toString()) + ":" + timeFormat(Math.floor((props.time % 3600)/60).toString()) + ":" + timeFormat((props.time % 60).toString());
 
     function timeFormat(string: string) {

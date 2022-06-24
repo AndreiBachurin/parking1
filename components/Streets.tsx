@@ -1,4 +1,10 @@
-export default function Streets(props) {
+import { ChangeEvent } from "react";
+
+interface PropsTypes{
+    onStreetSelect(event: ChangeEvent<HTMLSelectElement>): void
+}    
+
+export default function Streets(props: PropsTypes) {
     return (
         <div 
         style={{
