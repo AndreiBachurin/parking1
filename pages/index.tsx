@@ -9,7 +9,7 @@ import Details from '../components/Details';
 const Home: NextPage = () => {
   const [street, setStreet] = useState({id: "", name: "", lng: 0, lat: 0, tax: 0});
   const [isStreet, setIsStreet] = useState(false);
-  const [marker, setMarker] = useState(new mapboxgl.Marker());
+  const [marker, setMarker] = useState<mapboxgl.Marker>();
   const [slot, setSlot] = useState(0);
   const [time, setTime] = useState(0);
   const maxHours = 5;
@@ -31,7 +31,8 @@ const Home: NextPage = () => {
   times.push([maxHours, 0]);
   mapboxgl.accessToken =
         "pk.eyJ1IjoiYW5kcmVpYmFjaHVyaW4iLCJhIjoiY2wzcjkwNGVjMGh3ZzNjcDdmOTV3YnlhaSJ9.LzhaJXZjkTn10--iuTAr2A";
-    
+     
+    console.log(typeof marker);
   useLayoutEffect(() => {
     const map = new mapboxgl.Map({
       container: "map",
